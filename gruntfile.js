@@ -1,6 +1,20 @@
 module.exports = function(grunt) {
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
+		connect: {
+			options: {
+				port: 9000,
+				livereload: 35729,
+				keepalive: true,
+				// Change this to '0.0.0.0' to access the server from outside
+				hostname: 'localhost'
+			},
+			livereload: {
+				options: {
+					open: true,
+				}
+			}
+		},
 		jade: {
 			compile: {
 				files: [
@@ -36,6 +50,7 @@ module.exports = function(grunt) {
 	});
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-jade');
+	grunt.loadNpmTasks('grunt-contrib-connect');
 	grunt.loadNpmTasks('grunt-contrib-less');
 	grunt.registerTask('default', ['jade', 'less']);
 
