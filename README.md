@@ -24,14 +24,7 @@ the boilerplate is intended to be easy enough to use to get you up and running w
 	
 3. simply initiate grunt to take care of preprocessing
 	
-		grunt watch
+		grunt 
   
 
-It's reccommended to set up on a webserver but you can run this on a local filesystem. If you don't have a webserver
-available there are plenty of ways you can get up and running. For example, something like Apache, or docpad. If you have 
-python installed you could make use of __SimpleHTTPServer__ and just run a webserver in the repo as follows.
-
-	python -m SimpleHTTPServer <port>
-	
-This will get the single page app running on the port of your choosing on localhost.
-
+For production it's recommended to set up on a webserver but during the development Grunt will run a server available on http://localhost:9000

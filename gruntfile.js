@@ -44,7 +44,7 @@ module.exports = function(grunt) {
 						"templates/page/*.jade",
 						"less/**/*.less"
 				],
-				tasks: ['default']
+				tasks: ['jade', 'less']
 			}
 		}
 	});
@@ -52,6 +52,6 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-jade');
 	grunt.loadNpmTasks('grunt-contrib-connect');
 	grunt.loadNpmTasks('grunt-contrib-less');
-	grunt.registerTask('default', ['jade', 'less']);
+	grunt.registerTask('default', ["connect", "watch"]);
 
 };
