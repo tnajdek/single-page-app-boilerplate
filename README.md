@@ -15,16 +15,16 @@ the boilerplate is intended to be easy enough to use to get you up and running w
 
 1. simply clone the project
 
-	git clone https://github.com/jheytompkins/single-page-app-boilerplate.git
+		git clone https://github.com/jheytompkins/single-page-app-boilerplate.git
 	
 2. navigate into the repo and install dependencies
 
-	cd single-page-app-boilerplate
-	npm install
+		cd single-page-app-boilerplate
+		npm install
 	
 3. simply initiate grunt to take care of preprocessing
 	
-	grunt watch
+		grunt watch
   
 
 It's reccommended to set up on a webserver but you can run this on a local filesystem. If you don't have a webserver
